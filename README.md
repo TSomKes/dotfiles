@@ -6,7 +6,8 @@ Setup
 2. Create symbolic links:
 
 	```bash
-	ln -s ~/code/dotfiles/vimrc ~/.vimrc
 	ln -s ~/code/dotfiles/gitrc ~/.gitrc
+	ln -s ~/code/dotfiles/gvimrc ~/.gvimrc
+	ln -s ~/code/dotfiles/vimrc ~/.vimrc
 	```
 
