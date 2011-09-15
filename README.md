@@ -10,5 +10,3 @@ Setup
 	ln -s ~/code/dotfiles/gitrc ~/.gitrc
 	```
 
-setting up a test commit...
-
