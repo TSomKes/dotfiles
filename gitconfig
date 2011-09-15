@@ -1,6 +1,6 @@
 [user]
 	name = TSomKes
-	email = !cat ~/.email 
+	email = tsomkes@gmail.com
 [github]
 	user = TSomKes
 	token = !cat ~/.gittoken 
