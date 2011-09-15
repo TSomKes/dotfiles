@@ -1,0 +1,8 @@
+[user]
+	name = TSomKes
+	email = !cat ~/.email 
+[github]
+	user = TSomKes
+	token = !cat ~/.gittoken 
+[core]
+	editor = vim
