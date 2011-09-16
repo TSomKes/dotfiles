@@ -12,4 +12,3 @@ Setup
 	ln -s ~/code/dotfiles/vimrc ~/.vimrc
 	```
 
-Trying a web-based edit.  Interesting.
