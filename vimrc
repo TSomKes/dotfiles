@@ -1,5 +1,8 @@
 set nocompatible
 
+" Show a more meaningful window title
+set title
+
 " Show line numbers
 set number
 
@@ -30,6 +33,8 @@ syntax on
 
 " Aiming for reasonable language-aware indenting
 set autoindent
+filetype on
+filetype plugin on
 filetype indent on
 
 " Decent search behavior
@@ -45,4 +50,7 @@ set wildmode=longest,list
 set wrap
 set linebreak
 set nolist " (I guess list would disable linebreak...)
+
+" Keep a little more vertical context around the cursor
+set scrolloff=3
 
