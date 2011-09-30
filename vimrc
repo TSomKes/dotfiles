@@ -54,9 +54,12 @@ set nolist " (I guess list would disable linebreak...)
 " Keep a little more vertical context around the cursor
 set scrolloff=3
 
+" People seem to like setting the leader to ,
+let mapleader = ","
+
 " Map some useful spell-checking command
 :map <leader>ss :set spell!<CR>
 :map <leader>sn ]s
-:map <leader>sN [s
-:map <leader>s? z=
+:map <leader>sp [s
+:map <leader>sc z=
 
