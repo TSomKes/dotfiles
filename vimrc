@@ -1,26 +1,20 @@
 set nocompatible
 
-" Show a more meaningful window title
+" Basic display 
 set title
-
-" Show line numbers
 set number
-
-" Show row/column number thingie in lower-right corner
 set ruler
 
-" Treat tabs as tabs, three spaces wide.  (Yes, I'm weird.)
+" Tabs are tabs, three spaces wide.  (Yes, weird.)
 set tabstop=3
 set shiftwidth=3
 set noexpandtab
 
-" Use brighter for text colors (assumes we've got a dark background)
-"set background=dark
-
-" Experimenting with a colorscheme
+" Colors
+set background=dark
 colorscheme desert
 
-" Set some nicer search options
+" Search
 set incsearch
 set hlsearch
 set ignorecase
@@ -29,24 +23,17 @@ set smartcase
 " Make backspace work as one would expect in Insert mode
 set backspace=indent,eol,start
 
+" Language-awareness, etc.
 syntax on
-
-" Aiming for reasonable language-aware indenting
-set autoindent
 filetype on
 filetype plugin on
 filetype indent on
-
-" Decent search behavior
-set incsearch
-set ignorecase
-set smartcase
-set hlsearch
+set autoindent
 
 " Bash-style filename autocomplete
 set wildmode=longest,list
 
-" Wrap at word breaks (don't wrap in mid-word), without inserting newline characters automatically
+" Word wrapping
 set wrap
 set linebreak
 set nolist " (I guess list would disable linebreak...)
