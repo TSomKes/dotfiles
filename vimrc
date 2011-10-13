@@ -50,3 +50,5 @@ let mapleader = ","
 :map <leader>sp [s
 :map <leader>sc z=
 
+:map <leader>sh :set hlsearch!
+
