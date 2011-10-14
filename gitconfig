@@ -3,6 +3,6 @@
 	email = tsomkes@gmail.com
 [github]
 	user = TSomKes
-	token = !cat ~/.gittoken 
+	token = !cat ~/.githubtoken 
 [core]
 	editor = vim
