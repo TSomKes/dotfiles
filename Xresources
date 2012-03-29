@@ -1,0 +1,7 @@
+
+xterm*background: black
+xterm*foreground: grey
+
+XTerm*faceName: Bitstream Vera Sans Mono
+XTerm*faceSize: 10
+
