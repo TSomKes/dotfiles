@@ -1,4 +1,11 @@
 syntax: glob
-*.pyc
+
+
+# General
+*.orig
 *.swp
+
+
+# Python
+*.pyc
 
