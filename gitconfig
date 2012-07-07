@@ -6,3 +6,5 @@
 	token = !cat ~/.githubtoken 
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
+

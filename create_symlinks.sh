@@ -2,6 +2,7 @@
 
 ln -s ~/code/dotfiles/bashrc ~/.bashrc
 ln -s ~/code/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/code/dotfiles/gitignore ~/.gitignore
 ln -s ~/code/dotfiles/hgignore ~/.hgignore
 ln -s ~/code/dotfiles/hgrc ~/.hgrc
 ln -s ~/code/dotfiles/gvimrc ~/.gvimrc
