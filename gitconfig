@@ -7,4 +7,6 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+[alias]
+	diffz = diff --color=auto
 
