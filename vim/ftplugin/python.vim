@@ -4,3 +4,6 @@ setlocal shiftwidth=4
 setlocal textwidth=80
 setlocal smarttab
 setlocal expandtab
+
+" Shortcut for turning on colorcolumn (at textwidth+1)
+:map <leader>sc :set colorcolumn=+1<CR>
