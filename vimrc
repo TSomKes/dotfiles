@@ -50,5 +50,8 @@ let mapleader = ","
 :map <leader>sp [s
 :map <leader>sc z=
 
+" Whitespace toggle
+:map <leader>sl :set list!<CR>
+
 :map <leader>sh :set hlsearch!<CR>
 
