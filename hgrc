@@ -3,3 +3,8 @@ editor = vim
 ignore = ~/.hgignore
 username = TSomKes <tsomkes@gmail.com>
 
+[extensions]
+color = 
+
+[color]
+mode = ansi
