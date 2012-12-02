@@ -9,4 +9,6 @@
 	excludesfile = ~/.gitignore
 [alias]
 	diffz = diff --color=auto
+[color]
+	ui = auto
 
