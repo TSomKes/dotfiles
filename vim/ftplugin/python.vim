@@ -6,4 +6,7 @@ setlocal smarttab
 setlocal expandtab
 
 " Shortcut for turning on colorcolumn (at textwidth+1)
-:map <leader>sc :set colorcolumn=+1<CR>
+map <leader>sc :set colorcolumn=+1<CR>
+
+" F5 --> save & execute
+nmap <buffer> <F5> :w<CR> :!python %<CR>
