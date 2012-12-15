@@ -3,8 +3,12 @@ editor = vim
 ignore = ~/.hgignore
 username = TSomKes <tsomkes@gmail.com>
 
+[pager]
+pager = LESS='FRX' less
+
 [extensions]
 color = 
+pager =
 
 [color]
 mode = ansi
