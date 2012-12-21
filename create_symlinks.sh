@@ -1,12 +1,12 @@
 #!/bin/bash
 
-ln -s ~/code/dotfiles/bashrc ~/.bashrc
-ln -s ~/code/dotfiles/gitconfig ~/.gitconfig
-ln -s ~/code/dotfiles/gitignore ~/.gitignore
-ln -s ~/code/dotfiles/hgignore ~/.hgignore
-ln -s ~/code/dotfiles/hgrc ~/.hgrc
-ln -s ~/code/dotfiles/gvimrc ~/.gvimrc
-ln -s ~/code/dotfiles/vimrc ~/.vimrc
-ln -s ~/code/dotfiles/vim ~/.vim
-ln -s ~/code/dotfiles/xinitrc ~/.xinitrc
-ln -s ~/code/dotfiles/Xresources ~/.Xresources
+ln -s ~/dev/dotfiles/bashrc ~/.bashrc
+ln -s ~/dev/dotfiles/gitconfig ~/.gitconfig
+ln -s ~/dev/dotfiles/gitignore ~/.gitignore
+ln -s ~/dev/dotfiles/hgignore ~/.hgignore
+ln -s ~/dev/dotfiles/hgrc ~/.hgrc
+ln -s ~/dev/dotfiles/gvimrc ~/.gvimrc
+ln -s ~/dev/dotfiles/vimrc ~/.vimrc
+ln -s ~/dev/dotfiles/vim ~/.vim
+ln -s ~/dev/dotfiles/xinitrc ~/.xinitrc
+ln -s ~/dev/dotfiles/Xresources ~/.Xresources
