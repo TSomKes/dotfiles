@@ -8,3 +8,7 @@ PS1='\n\w\$ '
 # Disable system beep (sets beep length to 0)
 setterm -blength 0
 
+# Enable auto-completion
+if [ -f /etc/bash_completion ]; then
+. /etc/bash_completion
+fi
