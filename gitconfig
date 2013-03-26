@@ -9,6 +9,7 @@
 	excludesfile = ~/.gitignore
 [alias]
 	diffz = diff --color=auto
+	logz = log --pretty=format:\"%h - %an, %ar : %s\"
 [color]
 	ui = auto
 
