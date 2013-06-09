@@ -10,6 +10,7 @@
 [alias]
 	diffz = diff --color=auto
 	logz = log --pretty=format:\"%h - %an, %ar : %s\"
+	statz = status -sb
 [color]
 	ui = auto
 
