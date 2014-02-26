@@ -55,3 +55,5 @@ let mapleader = ","
 
 :map <leader>sh :set hlsearch!<CR>
 
+" A little help with git commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
