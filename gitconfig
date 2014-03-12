@@ -11,6 +11,7 @@
 	diffz = diff --color=auto
 	logz = log --pretty=format:'%h - %ad %an | %s' --date=short
 	statz = status -sb
+	showz = show --name-only
 [color]
 	ui = auto
 
