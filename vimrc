@@ -57,3 +57,6 @@ let mapleader = ","
 
 " A little help with git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Make gf open the file in a new tab
+:nnoremap gf <C-W>gf
