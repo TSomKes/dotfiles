@@ -1,0 +1,11 @@
+Host tsomkes
+	HostName tsomkes.com
+	User tsomkes
+
+Host bitbucket.org
+	User git
+	IdentityFile ~/.ssh/bitbucket_rsa
+
+Host github.com
+	User git
+	IdentityFile ~/.ssh/github_rsa

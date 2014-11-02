@@ -40,6 +40,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/hgignore ~/.hgignore
 ln $FLAG -s $DOTFILES_ABS_PATH/hgrc ~/.hgrc
 ln $FLAG -s $DOTFILES_ABS_PATH/gvimrc ~/.gvimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
+ln $FLAG -s $DOTFILES_ABS_PATH/ssh/config ~/.ssh/config
 ln $FLAG -s $DOTFILES_ABS_PATH/vim ~/.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
