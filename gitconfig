@@ -9,6 +9,7 @@
 [alias]
 	diffz = diff --color=auto
 	logz = log --pretty=format:'%h - %ad %an | %s' --date=short
+	logz2 = log --decorate --oneline
 	statz = status -sb
 	showz = show --name-only
 	blamez = blame --date=short
