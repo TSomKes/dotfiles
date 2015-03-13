@@ -22,5 +22,5 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # golang
-export GOPATH=$HOME/code/gocode
+export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
