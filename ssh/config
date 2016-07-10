@@ -1,6 +1,7 @@
 Host tsomkes
 	HostName tsomkes.com
 	User tsomkes
+	ServerAliveInterval 30
 
 Host bitbucket.org
 	User git
