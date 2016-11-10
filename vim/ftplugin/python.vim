@@ -9,4 +9,7 @@ setlocal expandtab
 map <leader>sc :set colorcolumn=+1<CR>
 
 " F5 --> save & execute
-nmap <buffer> <F5> :w<CR> :!python %<CR>
+nmap <buffer> <F5> :w<CR> :!python3 %<CR>
+
+" F6 --> PEP8
+nmap <buffer> <F6> :w<CR> :! pep8 %<CR>
