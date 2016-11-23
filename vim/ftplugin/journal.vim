@@ -4,4 +4,4 @@ set shiftwidth=4
 
 set textwidth=120
 
-:map <leader>st \[\ \]<CR>
+:map <leader>st /\[\ \]<CR>
