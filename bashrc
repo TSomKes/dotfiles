@@ -2,6 +2,8 @@
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 
+export PATH=$PATH:~/code/utilities
+
 # Change prompt:  newline, working directory
 PS1='\n\w\$ '
 

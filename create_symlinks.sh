@@ -33,6 +33,7 @@ while getopts ":fhi" opt; do
 	esac
 done
 
+ln $FLAG -s $DOTFILES_ABS_PATH/bash_profile  ~/.bash_profile    
 ln $FLAG -s $DOTFILES_ABS_PATH/bashrc ~/.bashrc
 ln $FLAG -s $DOTFILES_ABS_PATH/gitconfig ~/.gitconfig
 ln $FLAG -s $DOTFILES_ABS_PATH/gitignore ~/.gitignore
@@ -42,6 +43,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/hgrc ~/.hgrc
 ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
 ln $FLAG -s $DOTFILES_ABS_PATH/sqliterc ~/.sqliterc
 ln $FLAG -s $DOTFILES_ABS_PATH/ssh/config ~/.ssh/config
+ln $FLAG -s $DOTFILES_ABS_PATH/tmux.conf ~/.tmux.conf
 ln $FLAG -s $DOTFILES_ABS_PATH/vim ~/.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
