@@ -1,14 +1,21 @@
 set nocompatible
 
+set noswapfile
+
 " Basic display 
 set title
 set number
 set ruler
 
-" Tabs are tabs, three spaces wide.  (Yes, weird.)
-set tabstop=3
-set shiftwidth=3
-set noexpandtab
+"" Tabs are tabs, three spaces wide.  (Yes, weird.)
+"set tabstop=3
+"set shiftwidth=3
+"set noexpandtab
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 " Colors
 set background=dark
