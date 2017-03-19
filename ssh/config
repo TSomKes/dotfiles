@@ -5,12 +5,12 @@ IdentitiesOnly yes
 Host tsomkes
 	HostName tsomkes.com
 	User tsomkes
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
 	ServerAliveInterval 30
 
 Host bitbucket.org-TSomKes
 	User git
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
 
     # Making this work at the library
     Hostname altssh.bitbucket.org
@@ -18,7 +18,7 @@ Host bitbucket.org-TSomKes
 
 Host bitbucket.org-ChrisK-GogyUp
 	User git
-    IdentityFile ~/.ssh/gogy_id_rsa.pub
+    IdentityFile ~/.ssh/gogy_id_rsa
 
     # Making this work at the library
     Hostname altssh.bitbucket.org
@@ -26,4 +26,4 @@ Host bitbucket.org-ChrisK-GogyUp
 
 Host github.com
 	User git
-    IdentityFile ~/.ssh/id_rsa.pub
+    IdentityFile ~/.ssh/id_rsa
