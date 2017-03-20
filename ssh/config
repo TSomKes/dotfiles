@@ -13,7 +13,7 @@ Host bitbucket.org-TSomKes
     IdentityFile ~/.ssh/id_rsa
 
     # Making this work at the library
-    Hostname altssh.bitbucket.org
+    HostName altssh.bitbucket.org
     Port 443
 
 Host bitbucket.org-ChrisK-GogyUp
@@ -21,7 +21,7 @@ Host bitbucket.org-ChrisK-GogyUp
     IdentityFile ~/.ssh/gogy_id_rsa
 
     # Making this work at the library
-    Hostname altssh.bitbucket.org
+    HostName altssh.bitbucket.org
     Port 443
 
 Host github.com
