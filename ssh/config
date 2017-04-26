@@ -16,7 +16,7 @@ Host bitbucket.org-TSomKes
     HostName altssh.bitbucket.org
     Port 443
 
-Host bitbucket.org-ChrisK-GogyUp
+Host bitbucket.org-GogyUp
 	User git
     IdentityFile ~/.ssh/gogy_id_rsa
 
