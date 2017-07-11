@@ -60,7 +60,7 @@ let mapleader = ","
 " Whitespace toggle
 :map <leader>sl :set list!<CR>
 
-:map <leader>sh :set hlsearch!<CR>
+:map <leader>sh :nohl<CR>
 
 :map <leader>sr :set relativenumber!<CR>
 
