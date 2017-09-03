@@ -12,6 +12,8 @@ set ruler
 "set shiftwidth=3
 "set noexpandtab
 
+set hidden      " Allow navigating away from unsaved buffers
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -36,6 +38,16 @@ filetype on
 filetype plugin on
 filetype indent on
 set autoindent
+
+" Allow :find to look in other directory levels
+" -   This is a mystery to me.  Must learn more.
+" -   via https://www.youtube.com/watch?v=XA2WjJbmmoM
+set path+=**
+
+" Ignore build directory for vim :find
+" (Originally done for Gogy webservice work.  Will this play poorly with some
+" other project directories?)
+set wildignore+=**/build/**
 
 " Bash-style filename autocomplete
 set wildmode=longest,list
@@ -64,8 +76,12 @@ let mapleader = ","
 
 :map <leader>sr :set relativenumber!<CR>
 
+" ctags (exuberant ctags)
+:command Retag !ctags -R *
+
+" Allow use of tags file in parent directory, per
+" http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
+:set tags=tags;
+
 " A little help with git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
-
-" Make gf open the file in a new tab
-:nnoremap gf <C-W>gf
