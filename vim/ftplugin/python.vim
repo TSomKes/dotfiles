@@ -8,6 +8,9 @@ setlocal expandtab
 "set tabstop=8
 "set shiftwidth=8
 
+" Highlight trailing whitespace
+set list listchars=trail:.
+
 " Shortcut for turning on colorcolumn (at textwidth+1)
 map <leader>sc :set colorcolumn=+1<CR>
 
