@@ -1,5 +1,7 @@
 *.pyc
 *.sw?
 
+tags
+
 # Used for local "hidden" files, for scratchpad files, etc.
-workbench/
+ignored/
