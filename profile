@@ -21,6 +21,15 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+
+export PATH=$PATH:~/code/utilities
+
+
 # golang
 export GOPATH=$HOME/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+
+# Google AppEngine
+export PYTHONPATH="$PYTHONPATH:/usr/lib/google-cloud-sdk/platform/google_appengine"
+export PATH=$PATH:/usr/lib/google-cloud-sdk/bin
