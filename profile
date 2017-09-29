@@ -31,5 +31,6 @@ export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 
 # Google AppEngine
-export PYTHONPATH="$PYTHONPATH:/usr/lib/google-cloud-sdk/platform/google_appengine"
+export PYTHONPATH="$PYTHONPATH:/usr/lib/google-cloud-sdk/platform/google_appengine/lib"
+export PYTHONPATH="$PYTHONPATH:/usr/lib/google-cloud-sdk/platform/google_appengine/lib/yaml/lib"
 export PATH=$PATH:/usr/lib/google-cloud-sdk/bin
