@@ -42,6 +42,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/gitignore ~/.gitignore
 ln $FLAG -s $DOTFILES_ABS_PATH/gvimrc ~/.gvimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/hgignore ~/.hgignore
 ln $FLAG -s $DOTFILES_ABS_PATH/hgrc ~/.hgrc
+ln $FLAG -s $DOTFILES_ABS_PATH/config/lxterminal/lxterminal.conf ~/.config/lxterminal/lxterminal.conf
 ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
 ln $FLAG -s $DOTFILES_ABS_PATH/sqliterc ~/.sqliterc
 ln $FLAG -s $DOTFILES_ABS_PATH/ssh/config ~/.ssh/config
