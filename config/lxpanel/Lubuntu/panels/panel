@@ -18,6 +18,9 @@ Global {
   background=0
   backgroundfile=/usr/share/lxpanel/images/lubuntu-background.png
   iconsize=24
+  usefontsize=0
+  fontsize=10
+  align=left
 }
 Plugin {
   type=menu
@@ -42,41 +45,14 @@ Plugin {
   type=launchbar
   Config {
     Button {
-      id=pcmanfm.desktop
-    }
-    Button {
-      id=lxde-x-www-browser.desktop
+      id=google-chrome.desktop
     }
   }
 }
 Plugin {
   type=space
   Config {
-    Size=4
-  }
-}
-Plugin {
-  type=wincmd
-  Config {
-    Button1=iconify
-    Button2=shade
-  }
-}
-Plugin {
-  type=space
-  Config {
-    Size=4
-  }
-}
-Plugin {
-  type=pager
-  Config {
-  }
-}
-Plugin {
-  type=space
-  Config {
-    Size=4
+    Size=50
   }
   expand=0
 }
