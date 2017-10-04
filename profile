@@ -22,8 +22,10 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 
-export PATH=$PATH:~/code/utilities
+export PATH=$PATH:$HOME/code/utilities
 
+# For pipenv
+export PATH=$PATH:$HOME/.local/bin
 
 # golang
 export GOPATH=$HOME/go
