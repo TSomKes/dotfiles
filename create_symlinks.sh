@@ -33,7 +33,7 @@ while getopts ":fhi" opt; do
 	esac
 done
 
-ln $FLAG -s $DOTFILES_ABS_PATH/bash_profile  ~/.bash_profile    
+ln $FLAG -s $DOTFILES_ABS_PATH/bash_profile ~/.bash_profile
 ln $FLAG -s $DOTFILES_ABS_PATH/bashrc ~/.bashrc
 ln $FLAG -s $DOTFILES_ABS_PATH/emacs ~/.emacs
 ln $FLAG -s $DOTFILES_ABS_PATH/emacs.d ~/.emacs.d
