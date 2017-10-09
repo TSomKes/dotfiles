@@ -7,11 +7,6 @@ set title
 set number
 set ruler
 
-"" Tabs are tabs, three spaces wide.  (Yes, weird.)
-"set tabstop=3
-"set shiftwidth=3
-"set noexpandtab
-
 set hidden      " Allow navigating away from unsaved buffers
 
 set tabstop=4
@@ -22,6 +17,11 @@ set expandtab
 " Colors
 set background=dark
 colorscheme desert
+
+" Make 'tabe' foreground colors dimmer for non-active tabs
+" ...I just wish this worked.  (Maybe it's a problem with syntax higlighting
+" happening after this setting?)
+"highlight TabLine ctermfg=Gray ctermbg=Black
 
 " Search
 set incsearch
