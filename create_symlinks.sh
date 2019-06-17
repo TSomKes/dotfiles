@@ -44,6 +44,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/hgignore ~/.hgignore
 ln $FLAG -s $DOTFILES_ABS_PATH/hgrc ~/.hgrc
 ln $FLAG -s $DOTFILES_ABS_PATH/config/lxpanel/Lubuntu/panels/panel ~/.config/lxpanel/Lubuntu/panels/panel
 ln $FLAG -s $DOTFILES_ABS_PATH/config/lxterminal/lxterminal.conf ~/.config/lxterminal/lxterminal.conf
+ln $FLAG -s $DOTFILES_ABS_PATH/config/openbox/lxqt-rc.xml ~/.config/openbox/lxqt-rc.xml
 ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
 ln $FLAG -s $DOTFILES_ABS_PATH/sqliterc ~/.sqliterc
 ln $FLAG -s $DOTFILES_ABS_PATH/ssh/config ~/.ssh/config
