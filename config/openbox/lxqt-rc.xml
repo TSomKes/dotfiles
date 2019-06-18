@@ -309,6 +309,11 @@
       <command>qupzilla</command>
     </action>
   </keybind> -->
+  <keybind key="C-A-t">
+    <action name="Execute">
+      <command>lxterminal</command>
+    </action>
+  </keybind>
 </keyboard>
 
 <mouse>
@@ -739,6 +744,9 @@
 
   # end of the example
 -->
+    <application name="lxterminal">
+        <fullscreen>yes</fullscreen>
+    </application>
 </applications>
 
 </openbox_config>
