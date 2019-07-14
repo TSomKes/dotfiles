@@ -311,7 +311,7 @@
   </keybind> -->
   <keybind key="C-A-t">
     <action name="Execute">
-      <command>lxterminal</command>
+      <command>xterm</command>
     </action>
   </keybind>
 </keyboard>
@@ -744,7 +744,7 @@
 
   # end of the example
 -->
-    <application name="lxterminal">
+    <application name="xterm">
         <fullscreen>yes</fullscreen>
     </application>
 </applications>
