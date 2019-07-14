@@ -1,7 +1,8 @@
+! Reload me with:
+! $ xrdb ~/.Xresources
 
 xterm*background: black
 xterm*foreground: grey
 
 XTerm*faceName: Bitstream Vera Sans Mono
-XTerm*faceSize: 10
-
+XTerm*faceSize: 12
