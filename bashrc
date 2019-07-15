@@ -13,3 +13,5 @@ setterm blength 0
 if [ -f /etc/bash_completion ]; then
 . /etc/bash_completion
 fi
+
+alias dropbox=/usr/local/bin/dropbox.py
