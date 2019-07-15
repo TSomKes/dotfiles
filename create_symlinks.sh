@@ -51,3 +51,4 @@ ln $FLAG -sn $DOTFILES_ABS_PATH/vim ~/.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
 ln $FLAG -s $DOTFILES_ABS_PATH/Xresources ~/.Xresources
+ln $FLAG -s $DOTFILES_ABS_PATH/config/lxqt/globalkeyshortcuts.conf ~/.config/lxqt/globalkeyshortcuts.conf
