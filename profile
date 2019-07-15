@@ -25,15 +25,15 @@ fi
 export PATH=$PATH:$HOME/code/utilities
 
 # For pipenv
-export PATH=$PATH:$HOME/.local/bin
+#export PATH=$PATH:$HOME/.local/bin
 
 # golang
-export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+#export GOPATH=$HOME/go
+#export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 
 # Google AppEngine
-CLOUD_SDK_ROOT="${HOME}/.local/google-cloud-sdk/"
-export PYTHONPATH="${PYTHONPATH}:${CLOUD_SDK_ROOT}/platform/google_appengine"
-export PYTHONPATH="${PYTHONPATH}:${CLOUD_SDK_ROOT}/platform/google_appengine/lib/yaml/lib"
-export PATH="${PATH}:${CLOUD_SDK_ROOT}/bin"
+#CLOUD_SDK_ROOT="${HOME}/.local/google-cloud-sdk/"
+#export PYTHONPATH="${PYTHONPATH}:${CLOUD_SDK_ROOT}/platform/google_appengine"
+#export PYTHONPATH="${PYTHONPATH}:${CLOUD_SDK_ROOT}/platform/google_appengine/lib/yaml/lib"
+#export PATH="${PATH}:${CLOUD_SDK_ROOT}/bin"
