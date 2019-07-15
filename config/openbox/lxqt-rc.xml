@@ -314,6 +314,11 @@
       <command>xterm</command>
     </action>
   </keybind>
+  <keybind key="W-e">
+      <action name="Execute">
+          <command>pcmanfm-qt</command>
+      </action>
+  </keybind>
 </keyboard>
 
 <mouse>
