@@ -22,10 +22,13 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 
+# For my own home-brew utilities
 export PATH=$PATH:$HOME/code/utilities
 
+
 # For pipenv
-#export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.local/bin
+
 
 # golang
 #export GOPATH=$HOME/go
