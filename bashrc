@@ -15,3 +15,6 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 alias dropbox=/usr/local/bin/dropbox.py
+
+# vi keybindings
+set -o vi
