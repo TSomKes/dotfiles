@@ -47,6 +47,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
 ln $FLAG -s $DOTFILES_ABS_PATH/sqliterc ~/.sqliterc
 ln $FLAG -s $DOTFILES_ABS_PATH/ssh/config ~/.ssh/config
 ln $FLAG -s $DOTFILES_ABS_PATH/tmux.conf ~/.tmux.conf
+ln $FLAG -s $DOTFILES_ABS_PATH/todo.conf ~/.todo.cfg
 ln $FLAG -sn $DOTFILES_ABS_PATH/vim ~/.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
