@@ -122,3 +122,17 @@ source $ZSH/oh-my-zsh.sh
 #zle -N zle-keymap-select
 #export KEYTIMEOUT=1
 #####
+
+alias tmux='TERM=xterm-256color tmux'
+
+# Make Snap-installed Postman accessible from zsh
+# (via https://askubuntu.com/a/989485)
+emulate sh -c 'source /etc/profile'
+
+# Trying to make Cordova android-building happy
+export ANDROID_HOME=/home/tsomkes/Android/Sdk
+export ANDROID_SDK_ROOT=/home/tsomkes/Android/Sdk
+export PATH=${PATH}:$ANDROID_SDK_ROOT/build-tools:$ANDROID_SDK_ROOT/platform-tools
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+alias td=/usr/local/todo.txt_cli-2.11.0/todo.sh -d ~/.todo.cfg
