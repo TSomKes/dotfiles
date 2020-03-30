@@ -65,9 +65,6 @@ let mapleader = ","
 
 " Map some useful spell-checking command
 :map <leader>ss :set spell!<CR>
-:map <leader>sn ]s
-:map <leader>sp [s
-:map <leader>sc z=
 
 " Whitespace toggle
 :map <leader>sl :set list!<CR>
