@@ -3,14 +3,22 @@ AddKeysToAgent yes
 IdentitiesOnly yes
 
 Host tsomkes
-	HostName tsomkes.com
-	User tsomkes
+    HostName tsomkes.com
+    User tsomkes
     IdentityFile ~/.ssh/id_rsa
-	ServerAliveInterval 30
+    ServerAliveInterval 30
 
 Host bitbucket.org-TSomKes
-	User git
+    User git
     IdentityFile ~/.ssh/id_rsa
+
+    # Making this work at the library
+    HostName altssh.bitbucket.org
+    Port 443
+
+Host bitbucket.org-cekor1
+    User git
+    IdentityFile ~/.ssh/cekor1_id_rsa
 
     # Making this work at the library
     HostName altssh.bitbucket.org
