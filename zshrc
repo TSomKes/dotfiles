@@ -143,3 +143,8 @@ alias todo=todo-txt -d ~/.todo.cfg
 # (https://stackoverflow.com/a/32060011) leads me to believe it's the fault of
 # oh-my-zsh.  The fix:
 setopt nosharehistory
+
+# I /will/ get more than 8 colors !!!
+# Courtesy of https://stackoverflow.com/a/27190112/18347
+case $TERM in xterm) TERM=xterm-256color;; esac
+case $TERM in screen) TERM=screen-256color;; esac
