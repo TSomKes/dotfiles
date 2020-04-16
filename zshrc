@@ -137,3 +137,7 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 alias andstud=/usr/local/bin/android-studio/bin/studio.sh
 
 alias td=/usr/local/todo.txt_cli-2.11.0/todo.sh -d ~/.todo.cfg
+# tmux is irritating me with shared history between panes.  This answer
+# (https://stackoverflow.com/a/32060011) leads me to believe it's the fault of
+# oh-my-zsh.  The fix:
+setopt nosharehistory
