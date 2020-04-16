@@ -129,10 +129,11 @@ alias tmux='TERM=xterm-256color tmux'
 # (via https://askubuntu.com/a/989485)
 emulate sh -c 'source /etc/profile'
 
-# Trying to make Cordova android-building happy
+# Fun with Cordova & Android Studio
 export ANDROID_HOME=/home/tsomkes/Android/Sdk
 export ANDROID_SDK_ROOT=/home/tsomkes/Android/Sdk
-export PATH=${PATH}:$ANDROID_SDK_ROOT/build-tools:$ANDROID_SDK_ROOT/platform-tools
+export PATH=${PATH}:$ANDROID_SDK_ROOT/build-tools:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+alias andstud=/usr/local/bin/android-studio/bin/studio.sh
 
 alias td=/usr/local/todo.txt_cli-2.11.0/todo.sh -d ~/.todo.cfg
