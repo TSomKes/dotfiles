@@ -60,6 +60,23 @@ set nolist " (I guess list would disable linebreak...)
 " Keep a little more vertical context around the cursor
 set scrolloff=3
 
+" ctags (exuberant ctags)
+":command Retag !ctags -R *
+
+" Allow use of tags file in parent directory, per
+" http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
+:set tags=tags;
+
+" A little help with git commit messages
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Draw a grey line at column 80
+highlight ColorColumn ctermbg=235 guibg=darkgrey
+
+
+" Useful Key Sequences
+" --------------------
+
 " People seem to like setting the leader to ,
 let mapleader = ","
 
@@ -73,12 +90,6 @@ let mapleader = ","
 
 :map <leader>sr :set relativenumber!<CR>
 
-" ctags (exuberant ctags)
-:command Retag !ctags -R *
-
-" Allow use of tags file in parent directory, per
-" http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
-:set tags=tags;
-
-" A little help with git commit messages
-autocmd Filetype gitcommit setlocal spell textwidth=72
+" Toggle colorcolumn (column 80) 
+" (via https://vi.stackexchange.com/a/17574)
+:map <leader>sc :execute "set cc=" . (&cc == "" ? 80 : "")<CR>
