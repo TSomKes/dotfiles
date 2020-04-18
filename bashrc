@@ -2,6 +2,7 @@ alias grep='grep --color=auto'
 alias ls='ls --color=auto'
 alias diffz='diff --width=$(tput cols)'
 alias diff=colordiff
+#alias tmux='TERM=xterm-256color tmux'
 
 # Change prompt:  newline, working directory
 PS1='\n\w\$ '

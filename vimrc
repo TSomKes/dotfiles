@@ -17,9 +17,10 @@ set expandtab
 " Colors
 set background=dark
 colorscheme desert
+"colorscheme zenburn
 
 " Make 'tabe' foreground colors dimmer for non-active tabs
-" ...I just wish this worked.  (Maybe it's a problem with syntax higlighting
+" ...I just wish this worked.  (Maybe it's a problem with syntax highlighting
 " happening after this setting?)
 "highlight TabLine ctermfg=Gray ctermbg=Black
 
@@ -61,7 +62,7 @@ set nolist " (I guess list would disable linebreak...)
 set scrolloff=3
 
 " ctags (exuberant ctags)
-":command Retag !ctags -R *
+:command! Retag !ctags -R *
 
 " Allow use of tags file in parent directory, per
 " http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
@@ -72,6 +73,14 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Draw a grey line at column 80
 highlight ColorColumn ctermbg=235 guibg=darkgrey
+" Draw a blue line at column 80 - since 256 just won't work...
+"highlight ColorColumn ctermbg=4
+
+" Attempt to fix the issue of vim not redrawing correctly
+" via https://www.reddit.com/r/vim/comments/57huhd/any_idea_why_terminal_vim_isnt_correctly/
+if &term =~ '256color'
+    set t_ut=
+endif
 
 
 " Useful Key Sequences

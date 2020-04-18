@@ -123,7 +123,8 @@ source $ZSH/oh-my-zsh.sh
 #export KEYTIMEOUT=1
 #####
 
-alias tmux='TERM=xterm-256color tmux'
+#alias tmux='TERM=xterm-256color tmux'
+alias tmux='tmux -2'
 
 # Make Snap-installed Postman accessible from zsh
 # (via https://askubuntu.com/a/989485)
@@ -146,5 +147,11 @@ setopt nosharehistory
 
 # I /will/ get more than 8 colors !!!
 # Courtesy of https://stackoverflow.com/a/27190112/18347
-case $TERM in xterm) TERM=xterm-256color;; esac
-case $TERM in screen) TERM=screen-256color;; esac
+#case $TERM in xterm) TERM=xterm-256color;; esac
+#case $TERM in screen) TERM=screen-256color;; esac
+
+# Trying to get rid of extraneous % symbols in **only some** of my tmux projects
+# via:
+# - https://github.com/zeit/hyper/issues/2144
+# - https://superuser.com/questions/645599/why-is-a-percent-sign-appearing-before-each-prompt-on-zsh-in-windows/645612
+unsetopt PROMPT_SP
