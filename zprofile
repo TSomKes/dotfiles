@@ -2,3 +2,5 @@
 # (via https://superuser.com/questions/187639/zsh-not-hitting-profile)
 emulate sh -c '. ~/.profile'
 #emulate sh -c 'source /etc/profile'
+
+~/code/utilities/set-dwm-status.sh &
