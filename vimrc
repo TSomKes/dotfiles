@@ -7,22 +7,20 @@ set title
 set number
 set ruler
 
-set hidden      " Allow navigating away from unsaved buffers
+" Allow navigating away from unsaved buffers
+set hidden
 
+" Tabs
+" (Good overview:  http://vimcasts.org/episodes/tabs-and-spaces/)
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 
 " Colors
 set background=dark
-colorscheme desert
-"colorscheme zenburn
-
-" Make 'tabe' foreground colors dimmer for non-active tabs
-" ...I just wish this worked.  (Maybe it's a problem with syntax highlighting
-" happening after this setting?)
-"highlight TabLine ctermfg=Gray ctermbg=Black
+"colorscheme desert
+colorscheme tsomkes
 
 " Search
 set incsearch
@@ -31,6 +29,7 @@ set ignorecase
 set smartcase
 
 " Make backspace work as one would expect in Insert mode
+" (see https://vi.stackexchange.com/a/2163/29033)
 set backspace=indent,eol,start
 
 " Language-awareness, etc.
@@ -41,16 +40,19 @@ filetype indent on
 set autoindent
 
 " Allow :find to look in other directory levels
-" -   This is a mystery to me.  Must learn more.
-" -   via https://www.youtube.com/watch?v=XA2WjJbmmoM
+" - https://www.youtube.com/watch?v=XA2WjJbmmoM
+" - https://www.reddit.com/r/vim/comments/8mi8cm/is_using_in_path_a_good_idea/
+" Note:  Tim Pope hates this
+" (https://twitter.com/tpope/status/612991904897232898).
+" Makes me think I should look into alternatives.
 set path+=**
 
 " Ignore build directory for vim :find
 " (Originally done for Gogy webservice work.  Will this play poorly with some
 " other project directories?)
-set wildignore+=**/build/**
+"set wildignore+=**/build/**
 
-" Bash-style filename autocomplete
+" Bash-style filename autocomplete (list, don't change input with suggestion).
 set wildmode=longest,list
 
 " Word wrapping
@@ -59,28 +61,21 @@ set linebreak
 set nolist " (I guess list would disable linebreak...)
 
 " Keep a little more vertical context around the cursor
-set scrolloff=3
-
-" ctags (exuberant ctags)
-:command! Retag !ctags -R *
+set scrolloff=5
 
 " Allow use of tags file in parent directory, per
 " http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
-:set tags=tags;
+set tags=tags;
+
+
+" Commands
+" --------
 
 " A little help with git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
-" Draw a grey line at column 80
-highlight ColorColumn ctermbg=235 guibg=darkgrey
-" Draw a blue line at column 80 - since 256 just won't work...
-"highlight ColorColumn ctermbg=4
-
-" Attempt to fix the issue of vim not redrawing correctly
-" via https://www.reddit.com/r/vim/comments/57huhd/any_idea_why_terminal_vim_isnt_correctly/
-if &term =~ '256color'
-    set t_ut=
-endif
+" ctags (exuberant ctags)
+:command! Retag !ctags -R *
 
 
 " Useful Key Sequences
@@ -95,7 +90,7 @@ let mapleader = ","
 " Whitespace toggle
 :map <leader>sl :set list!<CR>
 
-:map <leader>sh :nohl<CR>
+:map <leader>s/ :nohl<CR>
 
 :map <leader>sr :set relativenumber!<CR>
 
