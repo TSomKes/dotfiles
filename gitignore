@@ -1,5 +1,11 @@
+# Python
 *.pyc
+
+# Vim
 *.sw?
+
+# C
+*.o
 
 tags
 
