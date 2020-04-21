@@ -38,5 +38,10 @@ hi ColorColumn                  ctermbg=235
 hi String           ctermfg=176
 hi SpellBad                     ctermbg=52
 
-hi IncSearch        ctermbg=7  ctermfg=25
+hi IncSearch        ctermbg=7   ctermfg=25
 hi Search           ctermfg=7   ctermbg=25
+
+" Git diffs
+" see https://stackoverflow.com/questions/30247603/
+hi DiffAdded        ctermfg=83
+hi DiffRemoved      ctermfg=160
