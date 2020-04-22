@@ -7,7 +7,8 @@ SAVEHIST=1000
 unsetopt beep
 
 # Vim-mode keybindings
-bindkey -v
+#bindkey -v
+bindkey -e
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/tsomkes/.zshrc'
@@ -28,6 +29,10 @@ alias ls='ls --color=auto'
 # you type)
 setopt noautomenu
 setopt nomenucomplete
+
+# Case-insensitive auto-completion
+# (via http://zsh.sourceforge.net/Guide/zshguide06.html#l171)
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # tmux is irritating me with shared history between panes.  This answer
 # (https://stackoverflow.com/a/32060011) leads me to believe it's the fault of
