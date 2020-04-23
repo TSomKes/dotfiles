@@ -26,6 +26,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Set some defaults
+export EDITOR='vim'
+export BROWSER='qutebrowser'
+
 # For my own home-brew utilities
 export PATH=$PATH:$HOME/code/utilities
 

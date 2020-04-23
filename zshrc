@@ -38,6 +38,3 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # (https://stackoverflow.com/a/32060011) leads me to believe it's the fault of
 # oh-my-zsh.  The fix:
 #setopt nosharehistory
-
-# Should this be done elsewhere?
-export EDITOR='vim'
