@@ -18,20 +18,28 @@ fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="$PATH:$HOME/bin"
 fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
+    PATH="$PATH:$HOME/.local/bin"
 fi
 
 # Set some defaults
 export EDITOR='vim'
 export BROWSER='qutebrowser'
 
-# For my own home-brew utilities
-export PATH=$PATH:$HOME/code/utilities
+# Java
+#export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+
+# Android
+#export ANDROID_SDK_ROOT=/usr/lib/android-sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+
+# VS Code
+PATH=$PATH:/snap/bin
 
 # golang
 #export GOPATH=$HOME/go
@@ -47,3 +55,6 @@ export PATH=$PATH:$HOME/code/utilities
 # Change BG color (done here primarily for dwm, which doesn't hit ~/.xinitrc
 # when logging in?)
 xsetroot -solid "#333333"
+
+# Fix Android Studio window behavior (and maybe others?)
+export _JAVA_AWT_WM_NONREPARENTING=1
