@@ -36,7 +36,7 @@ hi Title            ctermfg=75
 hi LineNr           ctermfg=245
 hi ColorColumn                  ctermbg=235
 hi String           ctermfg=176
-hi SpellBad                     ctermbg=52
+hi SpellBad                     ctermbg=88
 
 hi IncSearch        ctermbg=7   ctermfg=25
 hi Search           ctermfg=7   ctermbg=25
