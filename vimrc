@@ -22,6 +22,9 @@ set background=dark
 "colorscheme desert
 colorscheme tsomkes
 
+" Fix background color re-drawing problems
+set t_ut=""
+
 " Search
 set incsearch
 set hlsearch
@@ -74,6 +77,10 @@ set tags=tags;
 " A little help with git commit messages
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
+" Unfold on open
+" - via https://stackoverflow.com/questions/8316139/how-to-set-the-default-to-unfolded-when-you-open-a-file
+autocmd BufRead * normal zR
+
 " ctags (exuberant ctags)
 :command! Retag !ctags -R *
 
@@ -97,3 +104,9 @@ let mapleader = ","
 " Toggle colorcolumn (column 80) 
 " (via https://vi.stackexchange.com/a/17574)
 :map <leader>sc :execute "set cc=" . (&cc == "" ? 80 : "")<CR>
+
+" Load project-specific .vimlocal files (failing silently)
+silent! source .vimlocal
+
+" Markdown
+let g:markdown_folding = 1

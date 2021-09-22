@@ -37,6 +37,9 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 # Android
 #export ANDROID_SDK_ROOT=/usr/lib/android-sdk
 export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=${PATH}:${ANDROID_HOME}/emulator
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # VS Code
 PATH=$PATH:/snap/bin
@@ -58,3 +61,7 @@ xsetroot -solid "#333333"
 
 # Fix Android Studio window behavior (and maybe others?)
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Trying to fix Android emulator behavior 
+# (per https://wiki.archlinux.org/index.php/Java#Gray_window,_applications_not_resizing_with_WM,_menus_immediately_closing)
+export AWT_TOOLKIT=MToolkit

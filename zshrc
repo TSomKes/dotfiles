@@ -13,17 +13,24 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/tsomkes/.zshrc'
 
+# for poetry tab-completion
+fpath+=~/.zfunc
+
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Prompt:  blue, newline + pwd (w/ ~ substitution) + % or #
+# Prompt:  bold, blue, newline + pwd (2 levels, w/ ~ substitution) + % or #
 # (Blue + newline: better visual separation)
-PROMPT=$'\n'"%F{25}%~%f%# "
+PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
 # Aliases
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+
+# `vagrant ssh` was gross because it didn't have a TERM value I wanted.
+# After some searching for a solution, I landed on this gross approach.
+alias vsshz='TERM=xterm-256color vagrant ssh'
 
 # Turn off the auto-suggest-with-tab, behave more like bash (suggest, but make
 # you type)

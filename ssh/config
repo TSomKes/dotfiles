@@ -16,21 +16,22 @@ Host bitbucket.org-TSomKes
     HostName altssh.bitbucket.org
     Port 443
 
-Host bitbucket.org-cekor1
+#Host bitbucket.org-cekor1
+Host bitbucket.org
     User git
-    IdentityFile ~/.ssh/cekor1_id_rsa
+    IdentityFile ~/.ssh/id_c_rsa
 
     # Making this work at the library
     HostName altssh.bitbucket.org
     Port 443
 
-Host bitbucket.org-GogyUp
-	User git
-    IdentityFile ~/.ssh/gogy_id_rsa
+#Host bitbucket.org-GogyUp
+#	User git
+#    IdentityFile ~/.ssh/gogy_id_rsa
 
     # Making this work at the library
-    HostName altssh.bitbucket.org
-    Port 443
+#    HostName altssh.bitbucket.org
+#    Port 443
 
 Host github.com
 	User git
