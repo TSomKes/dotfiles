@@ -35,4 +35,4 @@ Host bitbucket.org
 
 Host github.com
 	User git
-    IdentityFile ~/.ssh/id_ts_rsa
+    IdentityFile ~/.ssh/id_ed25519
