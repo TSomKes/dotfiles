@@ -1,0 +1,11 @@
+# KEYBOARD CONFIGURATION FILE
+
+# Consult the keyboard(5) manual page.
+
+XKBMODEL="pc105"
+XKBLAYOUT="us"
+XKBVARIANT=""
+# NOTE:  Added ctrl:swapcaps to swap capslock & left control
+XKBOPTIONS="terminate:ctrl_alt_bksp,grp_led:scroll,ctrl:swapcaps"
+
+BACKSPACE="guess"
