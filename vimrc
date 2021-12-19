@@ -109,4 +109,4 @@ let mapleader = ","
 silent! source .vimlocal
 
 " Markdown
-let g:markdown_folding = 1
+" let g:markdown_folding = 1
