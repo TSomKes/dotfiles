@@ -42,8 +42,12 @@ ln $FLAG -s $DOTFILES_ABS_PATH/gitignore ~/.gitignore
 ln $FLAG -s $DOTFILES_ABS_PATH/gvimrc ~/.gvimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/hgignore ~/.hgignore
 ln $FLAG -s $DOTFILES_ABS_PATH/hgrc ~/.hgrc
+mkdir -p ~/.config/kitty
+ln $FLAG -s $DOTFILES_ABS_PATH/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln $FLAG -s $DOTFILES_ABS_PATH/config/openbox/lxqt-rc.xml ~/.config/openbox/lxqt-rc.xml
 ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
+ln $FLAG -s $DOTFILES_ABS_PATH/spectrwm.conf ~/.spectrwm.conf
+ln $FLAG -s $DOTFILES_ABS_PATH/spectrwm_us.conf ~/.spectrwm_us.conf
 ln $FLAG -s $DOTFILES_ABS_PATH/sqliterc ~/.sqliterc
 ln $FLAG -s $DOTFILES_ABS_PATH/ssh/config ~/.ssh/config
 ln $FLAG -s $DOTFILES_ABS_PATH/tmux.conf ~/.tmux.conf
