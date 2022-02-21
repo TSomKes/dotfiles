@@ -55,6 +55,9 @@ set path+=**
 " other project directories?)
 "set wildignore+=**/build/**
 
+" Avoid searching all imported files for ctrl+p
+set wildignore+=*/venv/*
+
 " Bash-style filename autocomplete (list, don't change input with suggestion).
 set wildmode=longest,list
 
