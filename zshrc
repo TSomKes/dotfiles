@@ -32,6 +32,15 @@ alias ls='ls --color=auto'
 # After some searching for a solution, I landed on this gross approach.
 alias vsshz='TERM=xterm-256color vagrant ssh'
 
+# Display to second bigger monitor (shrinking display of lappy to match res.)
+alias disp2='xrandr --fb 1920x1080 \
+    --output LVDS-1 --mode 1600x900 --scale-from 1920x1080 \
+    --output HDMI-1 --mode 1920x1080 --scale 1x1 --same-as LVDS-1'
+# Back to original display on lappy, turn off output to 2nd montior
+alias disp1='xrandr --fb 1600x900 \
+    --output LVDS-1 --scale 1x1 \
+    --output HDMI-1 --off'
+
 # Turn off the auto-suggest-with-tab, behave more like bash (suggest, but make
 # you type)
 setopt noautomenu
