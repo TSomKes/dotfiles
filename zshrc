@@ -25,8 +25,13 @@ compinit
 PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
 # Aliases
+alias vim=nvim
 alias grep='grep --color=auto'
 alias ls='ls --color=auto'
+alias vact='. ./env/bin/activate'
+alias lynx='lynx -vikeys'
+alias steamlink='flatpak run com.valvesoftware.SteamLink'
+alias tmuxz='./tmux-start.sh'
 
 # `vagrant ssh` was gross because it didn't have a TERM value I wanted.
 # After some searching for a solution, I landed on this gross approach.
