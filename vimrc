@@ -113,3 +113,8 @@ silent! source .vimlocal
 
 " Markdown
 " let g:markdown_folding = 1
+
+" vim/tmux copy-pasting
+" (via https://squidarth.com/programming/2018/12/14/tmux-linux.html)
+# and https://medium.com/@squidarth/a-better-copy-paste-flow-for-tmux-on-macos-5284f82571a2)
+set clipboard=unnamedplus
