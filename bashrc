@@ -20,5 +20,7 @@ alias dropbox=/usr/local/bin/dropbox.py
 # vi keybindings
 set -o vi
 
+alias vim=nvim
+
 # Swap caps lock & control
 setxkbmap -option "ctrl:swapcaps"
