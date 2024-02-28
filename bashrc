@@ -16,11 +16,8 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 alias dropbox=/usr/local/bin/dropbox.py
+alias vim=nvim
 
 # vi keybindings
 set -o vi
 
-alias vim=nvim
-
-# Swap caps lock & control
-setxkbmap -option "ctrl:swapcaps"
