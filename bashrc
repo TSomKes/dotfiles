@@ -19,3 +19,6 @@ alias dropbox=/usr/local/bin/dropbox.py
 
 # vi keybindings
 set -o vi
+
+# Swap caps lock & control
+setxkbmap -option "ctrl:swapcaps"
