@@ -60,8 +60,11 @@ PATH=$PATH:/snap/bin
 xsetroot -solid "#333333"
 
 # Fix Android Studio window behavior (and maybe others?)
-export _JAVA_AWT_WM_NONREPARENTING=1
+#export _JAVA_AWT_WM_NONREPARENTING=1
 
 # Trying to fix Android emulator behavior 
 # (per https://wiki.archlinux.org/index.php/Java#Gray_window,_applications_not_resizing_with_WM,_menus_immediately_closing)
-export AWT_TOOLKIT=MToolkit
+#export AWT_TOOLKIT=MToolkit
+
+# Swap caps lock & control
+setxkbmap -option "ctrl:swapcaps"
