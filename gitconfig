@@ -13,6 +13,7 @@
 	statz = status -sb
 	showz = show --name-only
 	blamez = blame --date=short
+    treez =log --graph --oneline --all
 [color]
 	ui = auto
 
