@@ -5,7 +5,19 @@ volume() {
     volumeIcon=$'\xf0\x9f\x94\x8a'
     muteIcon=$'\xf0\x9f\x94\x87'
 
-    echo "$volumeIcon"
+    volumeLevel=$(amixer sget Master \
+        | awk -F"[][]" '/Left:/ { print $2 }' \
+        | sed "s/[^0-9]//g")
+
+    volumeState=$(amixer sget Master \
+        | awk '/Left:/ {print $6}' \
+        | sed "s/[^a-z]//g")
+
+    if [ "$volumeState" = 'off' ]; then
+        echo "$muteIcon $volumeLevel"m
+    else
+        echo "$volumeIcon $volumeLevel"
+    fi
 }
 
 brightness() {
@@ -46,6 +58,6 @@ datetime() {
 }
 
 while true; do
-    xsetroot -name "  $(volumeIcon) | $(brightness) | $(battery) | $(datetime)  "
-    sleep 60 
+    xsetroot -name "  $(volume) | $(brightness) | $(battery) | $(datetime)  "
+    sleep 30
 done
