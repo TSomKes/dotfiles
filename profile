@@ -65,6 +65,3 @@ xsetroot -solid "#333333"
 # Trying to fix Android emulator behavior 
 # (per https://wiki.archlinux.org/index.php/Java#Gray_window,_applications_not_resizing_with_WM,_menus_immediately_closing)
 #export AWT_TOOLKIT=MToolkit
-
-# Swap caps lock & control
-setxkbmap -option "ctrl:swapcaps"

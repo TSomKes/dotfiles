@@ -40,11 +40,6 @@ ln $FLAG -sn $DOTFILES_ABS_PATH/emacs.d ~/.emacs.d
 ln $FLAG -s $DOTFILES_ABS_PATH/gitconfig ~/.gitconfig
 ln $FLAG -s $DOTFILES_ABS_PATH/gitignore ~/.gitignore
 ln $FLAG -s $DOTFILES_ABS_PATH/gvimrc ~/.gvimrc
-# ln $FLAG -s $DOTFILES_ABS_PATH/hgignore ~/.hgignore
-# ln $FLAG -s $DOTFILES_ABS_PATH/hgrc ~/.hgrc
-mkdir -p ~/.config/kitty
-ln $FLAG -s $DOTFILES_ABS_PATH/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-# ln $FLAG -s $DOTFILES_ABS_PATH/config/openbox/lxqt-rc.xml ~/.config/openbox/lxqt-rc.xml
 ln $FLAG -s $DOTFILES_ABS_PATH/profile ~/.profile
 # ln $FLAG -s $DOTFILES_ABS_PATH/spectrwm.conf ~/.spectrwm.conf
 # ln $FLAG -s $DOTFILES_ABS_PATH/spectrwm_us.conf ~/.spectrwm_us.conf
@@ -56,8 +51,15 @@ ln $FLAG -sn $DOTFILES_ABS_PATH/vim ~/.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
 ln $FLAG -s $DOTFILES_ABS_PATH/Xresources ~/.Xresources
-ln $FLAG -s $DOTFILES_ABS_PATH/config/lxqt/globalkeyshortcuts.conf ~/.config/lxqt/globalkeyshortcuts.conf
-ln $FLAG -s $DOTFILES_ABS_PATH/config/nvim/init.vim ~/.config/nvim/init.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/zshrc ~/.zshrc
 ln $FLAG -s $DOTFILES_ABS_PATH/zshenv ~/.zshenv
 ln $FLAG -s $DOTFILES_ABS_PATH/zprofile ~/.zprofile
+
+mkdir -p ~/.config/kitty
+ln $FLAG -s $DOTFILES_ABS_PATH/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln $FLAG -s $DOTFILES_ABS_PATH/config/lxqt/globalkeyshortcuts.conf ~/.config/lxqt/globalkeyshortcuts.conf
+ln $FLAG -s $DOTFILES_ABS_PATH/config/nvim/init.vim ~/.config/nvim/init.vim
+
+mkdir -p ~/.dwm
+ln $FLAG -s $DOTFILES_ABS_PATH/dwm/autostart.sh ~/.dwm/autostart.sh
+ln $FLAG -s $DOTFILES_ABS_PATH/dwm/update-dwm-status-bar.sh ~/.dwm/update-dwm-status-bar.sh

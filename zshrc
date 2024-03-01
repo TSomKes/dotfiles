@@ -32,6 +32,7 @@ alias vact='. ./env/bin/activate'
 alias lynx='lynx -vikeys'
 alias steamlink='flatpak run com.valvesoftware.SteamLink'
 alias tmuxz='./tmux-start.sh'
+alias fixcaps='setxkbmap -option "ctrl:swapcaps"'   # gross hack :(
 
 # `vagrant ssh` was gross because it didn't have a TERM value I wanted.
 # After some searching for a solution, I landed on this gross approach.
