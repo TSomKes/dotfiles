@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+wifi() {
+    antennaIcon=$'\xf0\x9f\x93\xb6'
+
+    wifiStatus=$(</sys/class/net/wlp3s0/operstate)
+
+    if [ "$wifiStatus" = 'down' ]; then
+        echo "$antennaIcon" X
+    else
+        echo "$antennaIcon"
+    fi
+}
+
 volume() {
 
     volumeIcon=$'\xf0\x9f\x94\x8a'
@@ -58,6 +70,6 @@ datetime() {
 }
 
 while true; do
-    xsetroot -name "  $(volume) | $(brightness) | $(battery) | $(datetime)  "
+    xsetroot -name "  $(wifi) | $(volume) | $(brightness) | $(battery) | $(datetime)  "
     sleep 30
 done
