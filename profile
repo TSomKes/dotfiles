@@ -43,25 +43,3 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # VS Code
 PATH=$PATH:/snap/bin
-
-# golang
-#export GOPATH=$HOME/go
-#export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
-
-# Google AppEngine
-#CLOUD_SDK_ROOT="${HOME}/.local/google-cloud-sdk/"
-#export PYTHONPATH="${PYTHONPATH}:${CLOUD_SDK_ROOT}/platform/google_appengine"
-#export PYTHONPATH="${PYTHONPATH}:${CLOUD_SDK_ROOT}/platform/google_appengine/lib/yaml/lib"
-#export PATH="${PATH}:${CLOUD_SDK_ROOT}/bin"
-
-
-# Change BG color (done here primarily for dwm, which doesn't hit ~/.xinitrc
-# when logging in?)
-xsetroot -solid "#333333"
-
-# Fix Android Studio window behavior (and maybe others?)
-#export _JAVA_AWT_WM_NONREPARENTING=1
-
-# Trying to fix Android emulator behavior 
-# (per https://wiki.archlinux.org/index.php/Java#Gray_window,_applications_not_resizing_with_WM,_menus_immediately_closing)
-#export AWT_TOOLKIT=MToolkit
