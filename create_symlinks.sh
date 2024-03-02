@@ -58,6 +58,8 @@ ln $FLAG -s $DOTFILES_ABS_PATH/zprofile ~/.zprofile
 mkdir -p ~/.config/kitty
 ln $FLAG -s $DOTFILES_ABS_PATH/config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln $FLAG -s $DOTFILES_ABS_PATH/config/lxqt/globalkeyshortcuts.conf ~/.config/lxqt/globalkeyshortcuts.conf
+
+mkdir -p ~/.config/nvim
 ln $FLAG -s $DOTFILES_ABS_PATH/config/nvim/init.vim ~/.config/nvim/init.vim
 
 mkdir -p ~/.dwm
