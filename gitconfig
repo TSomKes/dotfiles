@@ -6,6 +6,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RF
 [alias]
 	diffz = diff --color=auto
 	logz = log --pretty=format:'%h - %ad %an | %s' --date=short
@@ -21,3 +22,5 @@
 	default = simple
 [init]
 	defaultBranch = main
+[interactive]
+	diffFilter = diff-so-fancy --patch
