@@ -26,18 +26,18 @@ PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
 # Aliases
 alias cat=batcat
-alias ls=exa
-alias top=htop
-alias tree='exa --tree'
+alias top=btop
+alias tree=tre
 alias vim=nvim
 
 alias grep='grep --color=auto'
-alias vact='. ./env/bin/activate'
+alias ls='ls --color=auto'
 alias lynx='lynx -vikeys'
-alias tmuxz='./tmux-start.sh'
 
 alias fixcaps='setxkbmap -option "ctrl:swapcaps"'   # gross hack :(
 alias steamlink='flatpak run com.valvesoftware.SteamLink'
+alias tmuxz='./tmux-start.sh'
+alias vact='. ./env/bin/activate'
 
 # `vagrant ssh` was gross because it didn't have a TERM value I wanted.
 # After some searching for a solution, I landed on this gross approach.

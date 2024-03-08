@@ -2,13 +2,18 @@
 
 echo "GETTING STARTED" 
 
+sudo apt-get update
 sudo apt-get install -y \
     build-essential curl git keepass2 make neovim shellcheck tmux tree xclip \
     zsh
 sudo apt-get install -y \
-    bat exa fzf htop qutebrowser ranger tldr
+    bat btop entr fd-find fzf hyperfine jq just qutebrowser ranger ripgrep \
+    sd tldr tre-command
 sudo apt-get install -y \
     cmus light scrot
+
+# Prerequisite:  pre-MPR setup
+sudo apt-get install just
 
 # For connecting to linode box
 sudo apt-get install -y wireguard
