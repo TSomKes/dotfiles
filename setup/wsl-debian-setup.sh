@@ -4,8 +4,8 @@ echo "GETTING STARTED"
 
 sudo apt-get update
 sudo apt-get install -y \
-    build-essential curl git keepass2 make neovim shellcheck tmux tree wget \
-    xclip zsh
+    build-essential curl git keepass2 lsb-release make neovim shellcheck tmux \
+    tree wget xclip zsh
 sudo apt-get install -y \
     bat btop entr fd-find fzf hyperfine jq qutebrowser ranger ripgrep \
     sd tldr tre-command
