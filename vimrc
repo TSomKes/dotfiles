@@ -67,7 +67,7 @@ set linebreak
 set nolist " (I guess list would disable linebreak...)
 
 " Keep a little more vertical context around the cursor
-set scrolloff=5
+set scrolloff=12
 
 " Allow use of tags file in parent directory, per
 " http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
