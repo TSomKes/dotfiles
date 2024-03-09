@@ -39,6 +39,11 @@ alias steamlink='flatpak run com.valvesoftware.SteamLink'
 alias tmuxz='./tmux-start.sh'
 alias vact='. ./env/bin/activate'
 
+# Note-taking
+alias aside='capture-aside'
+alias doing='capture-doing'
+alias mygod='tail ~/notes/pa/doing*' 
+
 # `vagrant ssh` was gross because it didn't have a TERM value I wanted.
 # After some searching for a solution, I landed on this gross approach.
 alias vsshz='TERM=xterm-256color vagrant ssh'
