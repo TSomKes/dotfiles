@@ -24,8 +24,8 @@ compinit
 # (Blue + newline: better visual separation)
 # Also, gross hack for displaying whether we're in nix-shell, courtesy of:
 # - https://github.com/chisui/zsh-nix-shell#environment-info
-if [ -n "${IN_NIX_SHELL}" ]; then
-    PROMPT=$'\n'"%B%F{yellow}(nix)%f %F{25}%2~%f%b %# "
+if [ -n "${NIX_TAG}" ]; then
+    PROMPT=$'\n'"%B%F{yellow}("$NIX_TAG")%f %F{25}%2~%f%b %# "
 else
     PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 fi
