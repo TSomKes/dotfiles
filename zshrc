@@ -22,7 +22,13 @@ compinit
 
 # Prompt:  bold, blue, newline + pwd (2 levels, w/ ~ substitution) + % or #
 # (Blue + newline: better visual separation)
-PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
+# Also, gross hack for displaying whether we're in nix-shell, courtesy of:
+# - https://github.com/chisui/zsh-nix-shell#environment-info
+if [ -n "${IN_NIX_SHELL}" ]; then
+    PROMPT=$'\n'"%B%F{yellow}(nix)%f %F{25}%2~%f%b %# "
+else
+    PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
+fi
 
 # Aliases
 alias cat=batcat
@@ -39,8 +45,9 @@ alias steamlink='flatpak run com.valvesoftware.SteamLink'
 alias tmuxz='./tmux-start.sh'
 alias vact='. ./env/bin/activate'
 
-# Note-taking
+# PA aliases
 alias aside='capture-aside'
+alias circleback='vim ~/notes/pa/asides*'
 alias doing='capture-doing'
 alias mygod='tail ~/notes/pa/doing*' 
 
@@ -70,3 +77,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # (https://stackoverflow.com/a/32060011) leads me to believe it's the fault of
 # oh-my-zsh.  The fix:
 #setopt nosharehistory
+
+# Make nix use zsh
+source ~/3rd-party-code/zsh-nix-shell/nix-shell.plugin.zsh
