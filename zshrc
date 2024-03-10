@@ -1,7 +1,7 @@
 # History options
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+export HISTFILE=~/.histfile
+export HISTSIZE=1000
+export SAVEHIST=1000
 
 # No beeps
 unsetopt beep
@@ -22,7 +22,7 @@ compinit
 
 # Prompt:  bold, blue, newline + pwd (2 levels, w/ ~ substitution) + % or #
 # (Blue + newline: better visual separation)
-PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
+export PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
 # Aliases
 alias cat=batcat
@@ -73,14 +73,14 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 #setopt nosharehistory
 
 # Make nix use zsh
-source ~/3rd-party-code/zsh-nix-shell/nix-shell.plugin.zsh
+source "$HOME/3rd-party-code/zsh-nix-shell/nix-shell.plugin.zsh"
 
 # Display whether we're in nix-shell, right-hand side, courtesy of:
 # - https://github.com/chisui/zsh-nix-shell#environment-info
-if [ -n $"{IN_NIX_SHELL}" ]; then
+if [ -n "${IN_NIX_SHELL}" ]; then
     if [ -n "${NIX_TAG}" ]; then
-        RPS1="%B%F{yellow}(nix: "$NIX_TAG")%f"
+        export RPS1="%B%F{yellow}(nix: $NIX_TAG)%f"
     else
-        RPS1="%B%F{yellow}(nix)%f"
+        export RPS1="%B%F{yellow}(nix)%f"
     fi
 fi
