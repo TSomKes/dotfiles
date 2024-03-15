@@ -7,8 +7,8 @@ sudo apt-get install -y \
     build-essential curl git keepass2 make neovim shellcheck tmux tree xclip \
     zsh
 sudo apt-get install -y \
-    bat btop entr fd-find fzf hyperfine jq just moreutils qutebrowser ranger \
-    ripgrep sd tldr tre-command
+    bat bc btop entr fd-find fzf hyperfine jq just moreutils qutebrowser \
+    ranger ripgrep sd tldr tre-command
 sudo apt-get install -y \
     cmus light scrot
 
