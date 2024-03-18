@@ -2,6 +2,7 @@
 export HISTFILE=~/.histfile
 export HISTSIZE=1000
 export SAVEHIST=1000
+setopt HIST_IGNORE_DUPS
 
 # No beeps
 unsetopt beep
