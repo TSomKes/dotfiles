@@ -20,8 +20,8 @@ hi Normal           ctermfg=7   ctermbg=232
 hi Comment          ctermfg=71
 hi Constant         ctermfg=7
 hi Identifier       ctermfg=7               cterm=none
-hi Statement        ctermfg=7
-hi PreProc          ctermfg=7
+hi Statement        ctermfg=74
+hi PreProc          ctermfg=74
 hi Type             ctermfg=7
 hi Special          ctermfg=7
 hi Underlined       ctermfg=7               cterm=underline
