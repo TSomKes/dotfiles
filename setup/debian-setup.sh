@@ -4,11 +4,13 @@ echo "GETTING STARTED"
 
 sudo apt-get update
 sudo apt-get install -y \
-    build-essential curl git keepass2 make neovim shellcheck tmux tree xclip \
-    zsh
+    build-essential curl git keepass2 make neovim pandoc shellcheck tmux tree \
+    xclip zsh
 sudo apt-get install -y \
-    bat bc btop entr fd-find fzf hyperfine jq just moreutils qutebrowser \
-    ranger ripgrep sd tldr tre-command
+    bat bc btop entr fd-find fzf hyperfine jq just moreutils ranger \
+    rfkill ripgrep rlwrap sd syncthing tldr tre-command wordnet
+sudo apt-get install -y \
+    foliate qutebrowser
 sudo apt-get install -y \
     cmus light scrot
 
@@ -37,7 +39,7 @@ EOF
 fi
 
 echo "*** SETUP - ssh"
-if [ ! -f "$HOME/.ssh/id_ed25519" ]; then
+if [ ! -f "$HOME/.ssh/id_ed25519.pub" ]; then
 	echo " ** SETUP - ssh - public key not found - generating new key"
 	# Generate new SSH keys (will prompt for passphrase)
 	ssh-keygen -t ed25519 -C "tsomkes@gmail.com" -f /home/tsomkes/.ssh/id_ed25519
