@@ -14,6 +14,13 @@ sudo apt-get install -y \
 sudo apt-get install -y \
     cmus light scrot
 
+# For notifications (used when putting the pomodoro script in ~/.zshrc)
+# (primarily wanted libnotify-bin for access to notify-send, but needed
+# notification-daemon to make that work, despite the protests of some posts I
+# found. (via multiple sources, but concise here: 
+# https://askubuntu.com/questions/1447877/why-do-i-get-gdbus-errororg-freedesktop-dbus-error-serviceunknown-with-notify-s)
+sudo apt-get install -y libnotify-bin notification-daemon
+
 # Prerequisite:  pre-MPR setup
 sudo apt-get install just
 
