@@ -8,7 +8,7 @@ sudo apt-get install -y \
     xclip zsh
 sudo apt-get install -y \
     bat bc btop entr fd-find fzf hyperfine jq just moreutils ranger \
-    rfkill ripgrep rlwrap sd syncthing tldr tre-command wordnet
+    rfkill ripgrep rlwrap sd syncthing tealdeer tre-command wordnet
 sudo apt-get install -y \
     foliate qutebrowser
 sudo apt-get install -y \
