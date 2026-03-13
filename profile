@@ -24,6 +24,7 @@ fi
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$PATH:$HOME/.local/bin"
+    PATH="$PATH:$HOME/.local/bin/games"
 fi
 
 # Set some defaults
@@ -32,14 +33,14 @@ export BROWSER='qutebrowser'
 
 # Java
 #export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+#export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 # Android
 #export ANDROID_SDK_ROOT=/usr/lib/android-sdk
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=${PATH}:${ANDROID_HOME}/emulator
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+#export ANDROID_HOME=$HOME/Android/Sdk
+#export PATH=${PATH}:${ANDROID_HOME}/emulator
+#export PATH=${PATH}:${ANDROID_HOME}/tools
+#export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # VS Code
-PATH=$PATH:/snap/bin
+#PATH=$PATH:/snap/bin
