@@ -2,6 +2,7 @@
 export HISTFILE=~/.histfile
 export HISTSIZE=1000
 export SAVEHIST=1000
+setopt INC_APPEND_HISTORY # because the way st dies doesn't play nice with history
 setopt HIST_IGNORE_DUPS
 
 # No beeps
@@ -68,14 +69,16 @@ setopt nomenucomplete
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # Make nix use zsh
-source "$HOME/3rd-party-code/zsh-nix-shell/nix-shell.plugin.zsh"
+#source "$HOME/3rd-party-code/zsh-nix-shell/nix-shell.plugin.zsh"
 
 # Display whether we're in nix-shell, right-hand side, courtesy of:
 # - https://github.com/chisui/zsh-nix-shell#environment-info
-if [ -n "${IN_NIX_SHELL}" ]; then
-    if [ -n "${NIX_TAG}" ]; then
-        export RPS1="%B%F{yellow}(nix: $NIX_TAG)%f"
-    else
-        export RPS1="%B%F{yellow}(nix)%f"
-    fi
-fi
+#if [ -n "${IN_NIX_SHELL}" ]; then
+#    if [ -n "${NIX_TAG}" ]; then
+#        export RPS1="%B%F{yellow}(nix: $NIX_TAG)%f"
+#    else
+#        export RPS1="%B%F{yellow}(nix)%f"
+#    fi
+#fi
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
