@@ -27,13 +27,16 @@ export PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
 # Aliases
 alias cat=batcat
+alias sqlite3='rlwrap sqlite3' # PLEASE recognize backspace, sqlite!
 alias top=btop
 alias tree=tre
 alias vim=nvim
 
 alias grep='grep --color=auto'
+alias less='less -R'
 alias ls='ls --color=auto'
 alias lynx='lynx -vikeys'
+alias rg='rg -p'
 
 alias fixcaps='setxkbmap -option "ctrl:swapcaps"'   # gross hack :(
 alias steamlink='flatpak run com.valvesoftware.SteamLink'
