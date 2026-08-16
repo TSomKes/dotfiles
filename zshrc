@@ -27,7 +27,6 @@ export PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
 # Aliases
 alias cat=batcat
-alias sqlite3='rlwrap sqlite3' # PLEASE recognize backspace, sqlite!
 alias top=btop
 alias tree=tre
 alias vim=nvim
@@ -42,6 +41,7 @@ alias fixcaps='setxkbmap -option "ctrl:swapcaps"'   # gross hack :(
 alias steamlink='flatpak run com.valvesoftware.SteamLink'
 alias tmuxz='./tmux-start.sh'
 alias vact='. ./env/bin/activate'
+alias llogout='slock & sleep 0.5 && systemctl suspend'
 
 # PA aliases
 alias aside='capture-aside'
