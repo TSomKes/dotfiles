@@ -1,6 +1,8 @@
-.mode columns
-.headers on
-
+.output /dev/null
 PRAGMA foreign_keys = ON;
 PRAGMA journal_mode = WAL;
 PRAGMA busy_timeout = 5000;
+.output stdout
+
+.mode columns
+.headers on
