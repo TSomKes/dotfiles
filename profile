@@ -27,6 +27,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$PATH:$HOME/.local/bin/games"
 fi
 
+if [ -d "$HOME/code/utilities" ] ; then
+    PATH="$PATH:/$HOME/code/utilities"
+fi
+
 # Set some defaults
 export EDITOR='vim'
 export BROWSER='qutebrowser'
