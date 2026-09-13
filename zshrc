@@ -63,7 +63,7 @@ alias disp1='xrandr --fb 1600x900 \
     --output LVDS-1 --scale 1x1 \
     --output HDMI-1 --off'
 
-eval $(keychain --eval --quiet --agents ssh id_ed25519)
+eval $(keychain --eval --quiet --ignore-missing --agents ssh id_ed25519)
 
 # Turn off the auto-suggest-with-tab, behave more like bash (suggest, but make
 # you type)
