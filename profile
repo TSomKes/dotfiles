@@ -29,6 +29,7 @@ fi
 
 # Set some defaults
 export EDITOR='vim'
+export SYSTEMD_EDITOR='vim'
 export BROWSER='qutebrowser'
 
 # Java
