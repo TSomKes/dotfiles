@@ -5,4 +5,4 @@ xset b off
 # Make xterm notice .Xresources
 xrdb -merge ~/.Xresources
 
-exec ~/.local/bin/dwm
+exec dwm

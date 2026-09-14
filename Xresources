@@ -6,3 +6,10 @@ xterm*foreground: grey
 
 XTerm*faceName: Bitstream Vera Sans Mono
 XTerm*faceSize: 12
+
+dwm.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
+dwm.dmenufont: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
+st.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
+dmenu.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
+
+#include ~/.Xresources.local
