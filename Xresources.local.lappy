@@ -1,5 +1,0 @@
-! Reload me with:
-! $ xrdb ~/.Xresources
-
-dwm.borderSel: #aa2288
-dmenu.backgroundSel: #aa2288

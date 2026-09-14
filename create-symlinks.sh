@@ -48,8 +48,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/todo.conf ~/.todo.cfg
 ln $FLAG -sn $DOTFILES_ABS_PATH/vim ~/.vim
 ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
-ln $FLAG -s $DOTFILES_ABS_PATH/Xresources ~/.Xresources
-touch ~/.Xresources.local
+#ln $FLAG -s $DOTFILES_ABS_PATH/Xresources ~/.Xresources
 ln $FLAG -s $DOTFILES_ABS_PATH/zshrc ~/.zshrc
 ln $FLAG -s $DOTFILES_ABS_PATH/zshenv ~/.zshenv
 ln $FLAG -s $DOTFILES_ABS_PATH/zprofile ~/.zprofile
