@@ -12,4 +12,4 @@ dwm.dmenufont: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:si
 st.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
 dmenu.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
 
-#include ~/.Xresources.local
+#include "~/.Xresources.local"
