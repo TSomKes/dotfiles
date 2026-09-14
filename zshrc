@@ -41,7 +41,7 @@ alias fixcaps='setxkbmap -option "ctrl:swapcaps"'   # gross hack :(
 alias steamlink='flatpak run com.valvesoftware.SteamLink'
 alias tmuxz='./tmux-start.sh'
 alias vact='. ./env/bin/activate'
-alias llogout='slock & sleep 0.5 && systemctl suspend'
+alias llogout='slock & sleep 0.5 && systemctl suspend --check-inhibitors=no'
 alias demux='devenv shell tmux'
 
 # PA aliases
