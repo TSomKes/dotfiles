@@ -12,5 +12,6 @@ dwm.dmenufont: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:si
 st.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
 dmenu.font: JetBrains Mono:size=12:antialias=true:autohint=true, monospace:size=10
 
-dwm.borderSel: #aa2288
-dmenu.backgroundSel: #aa2288
+dwm.borderSel: #22aa88
+dmenu.backgroundSel: #22aa88
+slock.color4: #22aa88
