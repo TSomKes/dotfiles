@@ -118,3 +118,7 @@ silent! source .vimlocal
 " (via https://squidarth.com/programming/2018/12/14/tmux-linux.html)
 " and https://medium.com/@squidarth/a-better-copy-paste-flow-for-tmux-on-macos-5284f82571a2)
 set clipboard=unnamedplus
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0

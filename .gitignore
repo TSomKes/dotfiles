@@ -1,2 +1,5 @@
 *.swp
 *netrwhist*
+
+# vimwiki bits
+/vim/pack
