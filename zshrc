@@ -43,8 +43,10 @@ alias tmuxz='./tmux-start.sh'
 alias vact='. ./env/bin/activate'
 alias llogout='slock & sleep 0.5 && systemctl suspend --check-inhibitors=no'
 alias demux='devenv shell tmux'
-alias earbuds-connect='bluetoothctl connect 98:47:44:b4:93:ab'
-alias earbuds-disconnect='bluetoothctl disconnect 98:47:44:b4:93:ab'
+alias bluetooth-earbuds-connect='bluetoothctl connect 98:47:44:b4:93:ab'
+alias bluetooth-earbuds-disconnect='bluetoothctl disconnect 98:47:44:b4:93:ab'
+alias bluetooth-boombox-connect='bluetoothctl connect 6F:D0:EA:C4:65:67'
+alias bluetooth-boombox-disconnect='bluetoothctl disconnect 6F:D0:EA:C4:65:67'
 
 # PA aliases
 alias aside='capture-aside'
