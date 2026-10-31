@@ -121,7 +121,7 @@ set clipboard=unnamedplus
 
 " vimwiki
 let g:vimwiki_list = [
-        \ {'path': '~/vimwiki/personal/', 'syntax': 'markdown', 'ext': '.md'},
-        \ {'path': '~/vimwiki/gogyup/', 'syntax': 'markdown', 'ext': '.md'}
+        \ {'path': '~/vimwiki/ts/', 'syntax': 'markdown', 'ext': '.md'},
+        \ {'path': '~/vimwiki/gu/', 'syntax': 'markdown', 'ext': '.md'}
     \ ]
 let g:vimwiki_global_ext = 0
