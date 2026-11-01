@@ -1,0 +1,8 @@
+# Don't pass in the leading '#', just the RRGGBB.
+zrgb() {
+	local hex="$1"
+	local r=$((16#${hex:0:2}))
+	local g=$((16#${hex:2:2}))
+	local b=$((16#${hex:4:2}))
+	printf "\e[48;2;%d;%d;%dm            \e[0m #%s\n" "$r" "$g" "$b" "$hex"
+}

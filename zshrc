@@ -25,6 +25,9 @@ compinit
 # (Blue + newline: better visual separation)
 export PROMPT=$'\n'"%B%F{25}%2~%f%b %# "
 
+# My misc. functions
+[ -f ~/.zsh-functions ] && source ~/.zsh-functions
+
 # Aliases
 alias cat=batcat
 alias top=btop

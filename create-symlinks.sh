@@ -50,6 +50,7 @@ ln $FLAG -s $DOTFILES_ABS_PATH/vimrc ~/.vimrc
 ln $FLAG -s $DOTFILES_ABS_PATH/xinitrc ~/.xinitrc
 #ln $FLAG -s $DOTFILES_ABS_PATH/Xresources ~/.Xresources
 ln $FLAG -s $DOTFILES_ABS_PATH/zshrc ~/.zshrc
+ln $FLAG -s $DOTFILES_ABS_PATH/zsh-functions ~/.zsh-functions
 ln $FLAG -s $DOTFILES_ABS_PATH/zshenv ~/.zshenv
 ln $FLAG -s $DOTFILES_ABS_PATH/zprofile ~/.zprofile
 
