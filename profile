@@ -45,3 +45,5 @@ export BROWSER='qutebrowser'
 
 # VS Code
 #PATH=$PATH:/snap/bin
+
+export PATH
